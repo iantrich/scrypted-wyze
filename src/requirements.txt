@@ -1,0 +1,11 @@
+# Pure-Python wrapper. The proprietary native libraries are NOT installed by pip:
+# the package downloads them from download.agora.io the first time `agora` is imported.
+agora-python-server-sdk==2.4.10
+
+# wyzeapy with the Agora "lake" stream flow from SecKatie/wyzeapy PR #336
+# (jeffbryner/wyzeapy@solar-livestream), pinned to the PR head commit.
+wyzeapy @ https://github.com/jeffbryner/wyzeapy/archive/e8e286ece1bb46e56ce50f786b9cc381374ffeae.zip
+
+# Scrypted's runtime already loads the system _cffi_backend (1.16.0 on the
+# noble image); a newer pip-installed cffi then fails its version check.
+cffi==1.16.0

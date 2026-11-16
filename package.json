@@ -1,0 +1,35 @@
+{
+   "name": "scrypted-wyze",
+   "version": "0.0.1",
+   "description": "Wyze camera streaming for Scrypted via Agora (stage 1: SDK load probe)",
+   "private": true,
+   "keywords": [
+      "scrypted",
+      "plugin",
+      "wyze"
+   ],
+   "scripts": {
+      "scrypted-setup-project": "scrypted-setup-project",
+      "prescrypted-setup-project": "scrypted-package-json",
+      "build": "scrypted-webpack",
+      "prescrypted-vscode-launch": "scrypted-webpack",
+      "scrypted-vscode-launch": "scrypted-deploy-debug",
+      "scrypted-deploy-debug": "scrypted-deploy-debug",
+      "scrypted-debug": "scrypted-debug",
+      "scrypted-deploy": "scrypted-deploy",
+      "scrypted-readme": "scrypted-readme",
+      "scrypted-package-json": "scrypted-package-json"
+   },
+   "scrypted": {
+      "name": "Wyze (prototype)",
+      "runtime": "python",
+      "type": "API",
+      "interfaces": [
+         "Settings",
+         "DeviceProvider"
+      ]
+   },
+   "devDependencies": {
+      "@scrypted/sdk": "^0.5.59"
+   }
+}

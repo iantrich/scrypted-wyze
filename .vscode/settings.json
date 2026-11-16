@@ -1,0 +1,8 @@
+{
+    // Your Home Assistant box (Scrypted add-on uses host networking).
+    "scrypted.debugHost": "192.168.68.52",
+
+    "python.analysis.extraPaths": [
+        "./node_modules/@scrypted/sdk/types/scrypted_python"
+    ]
+}
